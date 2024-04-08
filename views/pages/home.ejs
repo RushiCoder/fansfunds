@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../layouts/head', { title: 'FansFund | Fund Contribution System' }) %>
+  </head>
+  <body class="background on-surface-text">
+    <!-- 
+        #TOP BAR 
+     -->
+    <header class="top-bar">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="/images/logo.svg" alt="FansFund"/>
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <article>
+        <!-- 
+         #HERO
+        -->
+        <section class="hero">
+          <div class="container">
+            <figure class="hero-banner">
+              <img
+                src="/images/banner.jpg"
+                width="944" 
+                height="280" 
+                alt=""
+                class="img-cover"
+              />
+            </figure>
+
+            <div class="hero-card">
+              <figure class="card-banner">
+                <img
+                  src="/images/profile.jpg"
+                  width="120"
+                  height="120"
+                  alt=""
+                  class="img-cover"
+                />
+              </figure>
+
+              <div class="card-content">
+                <h2 class="title-large">Fund Contribution System</h2>
+
+                <p class="subtitle body-medium on-surface-variant-text">
+                  FansFund
+                </p>
+
+                <p class="card-text body-medium on-surface-variant-text">
+                  Empower change with every contribution. Together, we're fueling progress one donation at a time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <div class="container lg-col-2">
+          <!-- 
+            #CONTRIBUTE 
+          -->
+
+          <section class="card elevated contribute">
+
+            <h2 class="title-medium">
+                Show your love to FansFund
+            </h2>
+
+            <form class="contribute-form" data-contribute-form>
+
+                <div class="counter-wrapper">
+
+                    <div class="body-medium on-surface-variant-text counter-label">
+                        <span class="material-symbols-rounded primary-text icon-small">favorite</span>
+
+                        $1 each
+                    </div>
+
+                    <div class="counter">
+
+                        <button type="button" class="icon-btn filled" data-decrement-btn>
+                            <span class="material-symbols-rounded">remove</span>
+
+                            <div class="state-layer"></div>
+                        </button>
+                        
+                        <div class="text-field-wrapper counter-field">
+                          <input type="number" name="amount" value="1" min="1" max="999" required class="text-field outlined body-large" data-counter-field data-form-field>
+                        </div>
+
+                        <button type="button" class="icon-btn filled" data-increment-btn>
+                          <span class="material-symbols-rounded">add</span>
+
+                          <div class="state-layer"></div>
+                      </button>
+
+                    </div>
+
+                </div>
+
+                <div class="text-field-wrapper">
+                  <label for="name" class="text-field-label body-large">Name</label>
+
+                  <input type="text" name="name" id="name" placeholder="Name or @yourtwitter (optional)" class="text-field outlined body-large" data-form-field>
+                </div>
+
+
+                <div class="text-field-wrapper">
+                  <label for="email" class="text-field-label body-large">Email*</label>
+
+                  <input type="email" name="email" id="email" placeholder="Your email address" required class="text-field outlined body-large" data-form-field>
+                </div>
+
+
+                <div class="text-field-wrapper">
+                  <label for="message" class="text-field-label body-large">Message</label>
+
+                  <textarea name="message" id="message" placeholder="Say something (optional)" required class="text-field outlined body-large" data-form-field></textarea>
+                </div>
+
+                <button type="submit" class="button filled label-large" data-submit-btn>
+                  Contribute $<span data-total>1</span>
+
+                  <div class="state-layer"></div>
+                </button>
+
+            </form>
+
+          </section>
+
+          <div>
+
+            <!-- 
+              #ABOUT
+             -->
+
+             <section class="card outlined about">
+
+              <h2 class="title-medium">About</h2>
+
+              <p class="card-text on-surface-variant-text body-medium">
+                Our fund contribution system is a platform designed to unite individuals and organizations in their efforts to make a positive impact. Through seamless donation processes and transparent accountability measures, we facilitate meaningful contributions towards worthy causes. Join us in fostering a culture of generosity and collective action for a better world.
+              </p>
+
+              <p class="on-surface-variant-text body-medium wrapper">
+                <span class="material-symbols-rounded icon-small">alternate_email</span>
+
+                <a href="mailto:rushikeshchincholkar33@gmail.com">rushikeshchincholkar33@gmail.com</a>
+              </p>
+
+             </section>  
+
+             <!-- 
+              #HISTORY
+              -->
+
+              <section class="card outlined history">
+
+                <h2 class="title-medium">Recent supporters</h2>
+
+                <ul class="history-list">
+
+                  <li class="history-card">
+
+                    <div class="card-header">
+                      <div class="card-avatar label-large">JD</div>
+                      
+                    <h3 class="title-small card-title">
+                      Rohit Kalaskar Contributed with <span class="primary-text">$100</span>
+                    </h3>
+                    </div>
+
+                    <p class="card-body body-large on-surface-variant-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim ipsa consectetur? Laudantium sint, temporibus, dolorem amet consectetur dignissimos ipsum voluptate ut necessitatibus
+                    </p>
+
+                  </li>
+
+                </ul>
+
+              </section>
+
+          </div>
+
+        </div>
+
+
+
+      </article>
+    </main>
+
+    <!-- 
+      #FOOTER
+     -->
+
+     <footer class="footer">
+      <p class="body-medium on-surface-variant-text">
+        &copy; 2024 FansFund
+      </p>
+     </footer>
+
+
+  </body>
+</html>
+
+
