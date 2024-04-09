@@ -458,6 +458,13 @@ textarea {
   place-items: center;
 }
 
+
+.images.elevated {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /** 
  * Card
 */
@@ -787,6 +794,7 @@ textarea {
   /**  
   * TYPOGRAPHY
   */
+  
 
   .title-large {
     font-size: var(--fs-headline-medium);
@@ -855,7 +863,18 @@ textarea {
   */
 
   .history-card, .history-card .card-header { gap: var(--space-3); }
+}
 
+
+@media (max-width: 600px) {
+  .images.elevated {
+    display: grid;
+    
+    left: 50px;
+    /* grid-template-columns: 1fr 1fr; */
+    /* align-items: center;
+    gap: var(--space-4); */
+
+  }
   
-
 }
