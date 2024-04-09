@@ -1,5 +1,17 @@
 'use strict';
 
+const img1 = document.querySelector("#some_img1");
+img1.addEventListener('click', () => alert('Server is Down Try after some time'));
+
+const img2 = document.querySelector("#some_img2");
+img2.addEventListener('click', () => alert('Server is Down Try after some time'));
+
+const img3 = document.querySelector("#some_img3");
+img3.addEventListener('click', () => alert('Server is Down Try after some time'));
+
+const img4 = document.querySelector("#some_img4");
+img4.addEventListener('click', () => alert('Server is Down Try after some time'));
+
 (function () {
     /** 
      * counter 
